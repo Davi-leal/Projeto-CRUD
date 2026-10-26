@@ -1,0 +1,280 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body{
+    background-color: #121214;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+#cabecalho-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+#container-dashboard{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;  
+}
+#botao-meu-ponto, #botao-conta{
+    background-color: #202024; 
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 8px; 
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}
+.cartao-relogio-principal{
+    background-color: #202024;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#visor-tempo-grade{
+    color: rgb(231, 231, 231);
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0 0 10px 0; 
+}
+.status-de-horario{
+    display: inline-block;
+    background-color: rgba(4, 211, 97, 0.1);
+    color: #04D361;
+    padding: 5px 15px;
+    border-radius: 999px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.letras-miudas {
+    color: #7C7C8A;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.botao-vermelho-largo{
+    background-color: #F75A68;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+.texto-localizacao{
+    color: #7C7C8A;
+    font-size: 12px;
+    margin-top: 15px;
+    display: block;
+}
+.painel-resumos{
+    margin-bottom: 20px;
+}
+.letras-do-cartao{
+    color: #7C7C8A;
+    font-size: 12px;
+    display: block;
+    margin-top: 2px;
+}
+.cartao-resumo{
+    background-color: #202024;
+    border-radius: 8px;
+    padding: 20px;
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+}
+.resumo-final{
+    margin-right: 0;
+}
+.limpar-fluxo{
+    clear: both;
+}
+#painel-historico{
+    background-color: #202024;
+    border-radius: 8px;
+    padding: 20px;
+}
+.linha-registro{
+    padding: 15px 0;
+    border-bottom: 1px solid #323238;
+    display: flex;
+    justify-content: space-between;
+}
+.tag-entrada{
+    display: inline-block;
+    background-color: rgba(4, 211, 97, 0.1);
+    color: #04D361;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 14px;
+}
+.tag-saida{
+    display: inline-block;
+    background-color: rgba(191, 21, 21, 0.1);
+    color: #F75A68;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 14px;
+}
+.titulo-historico {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.local-verde {
+    color: #04D361;
+    font-size: 14px;
+}
+.local-vermelho {
+    color: #F75A68;
+    font-size: 14px;
+}
+
+
+/* --- TELA: MINHA CONTA --- */
+.cabecalho-simples {
+    margin-bottom: 40px;
+}
+
+.link-voltar {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.perfil-usuario {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 40px;
+}
+
+.foto-perfil {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: #323238; 
+}
+
+.dados-perfil {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.status-ativo {
+    color: #04D361;
+    font-size: 14px;
+    font-weight: bold;
+}
+.painel-configuracoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 40px;
+}
+
+.coluna-esquerda {
+    width: 62%;
+    display: flex; 
+}
+.coluna-direita {
+    width: 35%;
+}
+.cartao-conta {
+    background-color: #202024;
+    border-radius: 8px;
+    padding: 30px;
+    width: 100%;
+}
+
+.titulo-cartao {
+    font-size: 18px;
+    margin-top: 0; 
+}
+
+.linha-info {
+    padding: 10px 0;
+    border-bottom: 1px solid #323238;
+}
+
+.linha-info.sem-borda {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.rotulo {
+    color: #7C7C8A;
+    font-size: 12px;
+    display: block; /* Força o texto branco a cair para a linha de baixo */
+    margin-bottom: 5px;
+}
+
+.dado {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Usa flexbox para jogar o email para a esquerda e o ícone do lápis para a direita */
+.dado-com-icone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone-editar {
+    cursor: pointer;
+}
+
+/* Cria espaço entre o cartão de Segurança e o de Configurações */
+.espaco-abaixo {
+    margin-bottom: 20px;
+}
+
+/* Agrupa o ícone da chave e os textos na mesma linha */
+.bloco-texto-icone {
+    display: flex;
+    align-items: center;
+}
+
+.icone-esquerda {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* A classe que você pediu: joga o texto para baixo e pinta de cinza */
+.subtexto {
+    color: #7C7C8A;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+.seta-direita {
+    color: #7C7C8A;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- INTERRUPTOR (TOGGLE) --- */
+.interruptor-ativo {
+    width: 44px;
+    height: 24px;
+    background-color: #3b82f6; /* Azul do protótipo */
+    border-radius: 20px; /* Arredonda como uma pílula */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Empurra a bolinha para a direita (estado de ligado) */
+    padding: 2px; /* Dá um respiro interno para a bolinha não encostar na borda */
+    cursor: pointer;
+}
+
+.bolinha-branca {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%; /* Transforma o quadrado num círculo perfeito */
+}
